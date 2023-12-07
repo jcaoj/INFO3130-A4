@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Custom Input Styles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+  </head>
+
+  <body >
+    <header>
+        <div class="background">
+            <div class="navbar">
+                <img src="assets/rocket-lunch.png" class="logo">
+                <nav>
+                    <ul>                     
+                        <li><a>STYLES</a></li>
+                        <li><a>ACCOUNT</a></li>
+                        <li><a>CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card">
+                <div class="inputs">
+                    <div class="inputRow">
+                        <label>Name</label>
+                        <input type="text" size="50">
+                    </div>
+                    <div class="inputRow">
+                        <div class="checkbox-wrapper-27" style="display: inline;">
+                            <label class="checkbox">
+                              <input type="checkbox">
+                              <span class="checkbox__icon"></span>
+                              First Add On
+                            </label>
+                        </div>
+
+                        <div class="checkbox-wrapper-27" style="display: inline;">
+                            <label class="checkbox">
+                              <input type="checkbox">
+                              <span class="checkbox__icon"></span>
+                              Second Add On
+                            </label>
+                        </div>
+                    </div>
+                    <div class="inputRow">
+                        <label><input type="radio" name="e"> First</label>
+                        <label><input type="radio" name="e"> Second</label>
+                    </div>
+
+                    <div class="inputRow">
+                        <label for="items">Please Choose:</label>
+
+                        <select name="items" id="items">
+                          <option>Item 1</option>
+                          <option>Item 2</option>
+                          <option>Item 3</option>
+                          <option>Item 4</option>
+                        </select>
+                    </div>
+
+                    <div class="inputRow">
+                        <button class="secondaryButton">Secondary Button</button>
+                        <button>Primary Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  </body>
+</html>

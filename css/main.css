@@ -1,0 +1,243 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+     color: #EF6F6C;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+/* NAVBAR */
+.navbar {
+    padding-left: 2%;
+    padding-right: 4%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: #EF6F6C 3px solid;
+    /* background-color: white;
+    border-bottom: #24326f 2px solid; */
+}
+
+.logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EF6F6C;
+    font-style: bold;
+    font-weight: 900;
+}
+
+nav ul li a:hover {
+    color: #56E39F;
+    cursor: pointer;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #56E39F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #EF6F6C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #465775;
+}
+
+.inputRow {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    width: 100%;
+}
+
+label {
+    font-weight: 700;
+    padding-right: 1em;
+}
+
+button {
+	appearance: none;
+	border: .2em solid #EF6F6C;
+    margin-left: 2em;
+	background: hsl(0 0 0/0);
+	padding: .85em 1.5em;
+	color: #EF6F6C;
+	border-radius: 1em;
+	transition: 1s;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(255, 173, 5, 0.4);
+	&:hover, &:focus, &:active {
+		background: #EF6F6C;
+		color: #fff;
+	}
+}
+
+.secondaryButton {
+    border: .2em solid #465775;
+    color: #465775;
+    &:hover, &:focus, &:active {
+		background: #465775;
+		color: #fff;
+	}
+}
+
+select {
+	appearance: none;
+	outline: none;
+    border: none;
+	border: .2em solid #EF6F6C;
+	border-radius: .2em;
+	padding: .4em;
+	color: #EF6F6C;
+    &:hover, &:focus, &:active {
+        border: .2em solid #56E39F;
+    }
+}
+
+input[type=text] {
+	appearance: none;
+	outline: none;
+    border: none;
+	border-bottom: .2em solid #EF6F6C;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #EF6F6C;
+    &:hover, &:focus, &:active {
+        border-bottom: .2em solid #56E39F;
+    }
+}
+
+.checkbox-wrapper-27 .checkbox {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.checkbox-wrapper-27 .checkbox > input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.checkbox-wrapper-27 .checkbox__icon {
+    display: inline-block;
+    color: #EF6F6C;
+    vertical-align: left;
+    margin-right: 5px;
+}
+.checkbox-wrapper-27 input[type="checkbox"]:checked ~ .checkbox__icon {
+    color: #EF6F6C;
+}
+
+.checkbox-wrapper-27 .checkbox__icon:before {
+    font-family: "icons-27";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.checkbox-wrapper-27 .icon--check:before,
+.checkbox-wrapper-27 input[type="checkbox"]:checked ~ .checkbox__icon:before {
+    content: "\e601";
+}
+
+.checkbox-wrapper-27 .icon--check-empty:before,
+.checkbox-wrapper-27 .checkbox__icon:before {
+    content: "\e600";
+}
+
+@font-face {
+    font-family: "icons-27";
+    font-weight: normal;
+    font-style: normal;
+    src: url("data:application/x-font-woff;charset=utf-8;base64,d09GRk9UVE8AAAR4AAoAAAAABDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAPgAAAD4fZUAVE9TLzIAAAHsAAAAYAAAAGAIIvy3Y21hcAAAAkwAAABMAAAATBpVzFhnYXNwAAACmAAAAAgAAAAIAAAAEGhlYWQAAAKgAAAANgAAADYAeswzaGhlYQAAAtgAAAAkAAAAJAPiAedobXR4AAAC/AAAABgAAAAYBQAAAG1heHAAAAMUAAAABgAAAAYABlAAbmFtZQAAAxwAAAE5AAABOUQYtNZwb3N0AAAEWAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v4lPh0BR0AAAB8Dx0AAACBER0AAAAJHQAAAO8SAAcBAQgPERMWGyBpY29tb29uaWNvbW9vbnUwdTF1MjB1RTYwMHVFNjAxAAACAYkABAAGAQEEBwoNL2X8lA78lA78lA77lA6L+HQVi/yU+JSLi/iU/JSLBd83Fffsi4v77Pvsi4v37AUOi/h0FYv8lPiUi4v33zc3i/s3++yLi/fs9zeL398F9wCFFftN+05JzUdI9xr7GveR95FHzwUO+JQU+JQViwwKAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gEB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmAf/9//8AAAAAACDmAP/9//8AAf/jGgQAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAAAAACkYCfgXw889QALAgAAAAAAz65FuwAAAADPrkW7AAD/4AIAAeAAAAAIAAIAAAAAAAAAAQAAAeD/4AAAAgAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAABAAAAAgAAAAIAAAAAAFAAAAYAAAAAAA4ArgABAAAAAAABAA4AAAABAAAAAAACAA4ARwABAAAAAAADAA4AJAABAAAAAAAEAA4AVQABAAAAAAAFABYADgABAAAAAAAGAAcAMgABAAAAAAAKACgAYwADAAEECQABAA4AAAADAAEECQACAA4ARwADAAEECQADAA4AJAADAAEECQAEAA4AVQADAAEECQAFABYADgADAAEECQAGAA4AOQADAAEECQAKACgAYwBpAGMAbwBtAG8AbwBuAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBHAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4AAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==") format("woff");
+}
+
+input[type=radio] {
+    --s: 1em;     /* control the size */
+    --c: #EF6F6C; /* the active color */
+
+    height: var(--s);
+    aspect-ratio: 1;
+    border: calc(var(--s)/8) solid #EF6F6C;
+    padding: calc(var(--s)/8);
+    background: 
+        radial-gradient(farthest-side,var(--c) 94%,#EF6F6C) 
+        50%/0 0 no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+}
+input[type=radio]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+  
+.card {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 1% auto;
+    width: 40%;
+    height: fit-content;
+    border-radius: 2em;
+    border: .2em solid #EF6F6C;
+    padding: 1.5em;
+    box-shadow: 0px 3px 15px rgba(255, 173, 5, 0.4);
+}
+
+.inputs {
+    margin: auto;
+}
+
+.submitRow {
+    bottom: 1.5em;
+    right: 1.5em;
+    position: absolute;
+}
